@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="poky"
-          fetch="git://git.yoctoproject.org/poky" />
-  <default remote="poky"
+  <remote name="yocto"
+	  fetch="git://git.yoctoproject.org/" />
+  <default remote="yocto"
            revision="refs/heads/langdale"
            sync-j="4"/>
 
-  <project name="yocto/poky" path="." branch="langdale"/>
+  <project name="poky" path="." branch="langdale"/>
 </manifest>
