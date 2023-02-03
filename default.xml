@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="yocto"
-	  fetch="git://git.yoctoproject.org/" />
-  <default remote="yocto"
-           revision="refs/heads/langdale"
-           sync-j="4"/>
+  <remote name="github" fetch="git://git.github.com/" />
+  <remote name="yocto" fetch="git://git.yoctoproject.org/" />
+  <default remote="yocto" revision="refs/heads/langdale" sync-j="4"/>
 
-  <project name="poky" path="." branch="langdale"/>
+  <project name="poky" path="." remote="yocto" branch="langdale"/>
+  <project name="meta-arm" path="meta-arm" remote="yocto" branch="langdale"/>
+  <project name="meta-openembedded" path="meta-openembedded" remote="yocto" branch="langdale"/>
+  <project name="meta-ti" path="meta-ti" remote="yocto" branch="langdale"/>
+  
+  <project name="ros/meta-ros" path="meta-ros" remote="github" branch="master"/>
 </manifest>
