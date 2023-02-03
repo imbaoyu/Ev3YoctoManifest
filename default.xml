@@ -6,8 +6,8 @@
 
   <project name="poky" path="." remote="yocto" branch="langdale"/>
   <project name="meta-arm" path="meta-arm" remote="yocto" branch="langdale"/>
-  <project name="meta-openembedded" path="meta-openembedded" remote="yocto" branch="langdale"/>
   <project name="meta-ti" path="meta-ti" remote="yocto" branch="langdale"/>
   
+  <project name="openembedded/meta-openembedded" path="meta-openembedded" remote="github" branch="langdale"/>
   <project name="ros/meta-ros" path="meta-ros" remote="github" branch="master"/>
 </manifest>
