@@ -2,6 +2,8 @@
 <manifest>
   <remote name="github" fetch="https://github.com/" />
   <remote name="yocto" fetch="git://git.yoctoproject.org/" />
+  <remote name="origin" fetch="git@github.com:imbaoyu/" />
+  
   <default remote="yocto" revision="refs/heads/langdale" sync-j="1"/>
 
   <project name="poky" path="." remote="yocto" branch="langdale"/>
@@ -10,4 +12,5 @@
   
   <project name="openembedded/meta-openembedded" path="meta-openembedded" remote="github" branch="langdale"/>
   <project name="ros/meta-ros" path="meta-ros" remote="github" branch="master" revision="refs/heads/master"/>
+  <project name="meta-h4r-ev3" path="meta-h4r-ev3" remote="origin" branch="main" revision="refs/heads/main"/>
 </manifest>
